@@ -1,0 +1,69 @@
+{
+  "name": "@xetd/hooks",
+  "version": "0.0.1-alpha.0",
+  "private": true,
+  "description": "Enhanced react hooks and component for effortless state management and better performance",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepare": "pnpm exec -- npx husky install",
+    "prettier": "prettier --write packages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xettri/xetd-hooks.git"
+  },
+  "keywords": [
+    "react",
+    "react-hooks"
+  ],
+  "author": {
+    "name": "Bharat Rawat",
+    "url": "https://bharatrawat.com",
+    "email": "imbharatrawat@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xettri/xetd-hooks/issues"
+  },
+  "homepage": "https://github.com/xettri/xetd-hooks#readme",
+  "dependencies": {
+    "fast-deep-equal": "^3.1.3",
+    "use-sync-external-store": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-transform-object-rest-spread": "^7.24.1",
+    "@babel/plugin-transform-optional-chaining": "^7.24.1",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/use-sync-external-store": "0.0.6",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.4.0",
+    "react": ">=16.4.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "lint-staged": {
+    "packages/**/*.{js,ts}": [
+      "prettier --write"
+    ]
+  }
+}

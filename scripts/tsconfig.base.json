@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "types": ["node", "react"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false,
+    "lib": ["esnext", "dom"],
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "noImplicitReturns": true,
+    "stripInternal": true,
+    "noEmit": true,
+    "allowJs": false,
+    "incremental": true,
+    "isolatedModules": true
+  }
+}
